@@ -1,0 +1,50 @@
+tMotor LEFT_MOTOR = motorD;
+tMotor RIGHT_MOTOR =motorA;
+
+task main()
+{
+	//Forward
+	setMotorSyncEncoder(LEFT_MOTOR, RIGHT_MOTOR, 0, 1000, 50);
+	waitUntilMotorStop(RIGHT_MOTOR);
+
+	//RightTurn
+	setMotorSyncEncoder(RIGHT_MOTOR, LEFT_MOTOR, -75, 400, 50);
+	sleep(300);
+	waitUntilMotorStop(RIGHT_MOTOR);
+
+	//Forward
+	setMotorSyncEncoder(LEFT_MOTOR, RIGHT_MOTOR, 0, 1000, 50);
+	waitUntilMotorStop(RIGHT_MOTOR);
+
+	//RightTurn
+	setMotorSyncEncoder(RIGHT_MOTOR, LEFT_MOTOR, -75, 400, 50);
+	sleep(300);
+	waitUntilMotorStop(RIGHT_MOTOR);
+
+	//Forward
+	setMotorSyncEncoder(LEFT_MOTOR, RIGHT_MOTOR, 0, 1000, 50);
+	waitUntilMotorStop(RIGHT_MOTOR);
+
+	//RightTurn
+	setMotorSyncEncoder(RIGHT_MOTOR, LEFT_MOTOR, -75, 400, 50);
+	sleep(300);
+	waitUntilMotorStop(RIGHT_MOTOR);
+
+	//Forward
+	setMotorSyncEncoder(LEFT_MOTOR, RIGHT_MOTOR, 0, 1000, 50);
+	waitUntilMotorStop(RIGHT_MOTOR);
+
+	//RightTurn
+	setMotorSyncEncoder(RIGHT_MOTOR, LEFT_MOTOR, -75, 395, 50);
+	sleep(300);
+	waitUntilMotorStop(RIGHT_MOTOR);
+
+	//Forward
+	setMotorSyncEncoder(LEFT_MOTOR, RIGHT_MOTOR, 0, 975, 50);
+	waitUntilMotorStop(RIGHT_MOTOR);
+
+	//RightTurn
+	setMotorSyncEncoder(RIGHT_MOTOR, LEFT_MOTOR, -75, 400, 50);
+	sleep(300);
+	waitUntilMotorStop(RIGHT_MOTOR);
+}
